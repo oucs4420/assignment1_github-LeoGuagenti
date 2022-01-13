@@ -15,8 +15,8 @@ int main( int argc, char* argv[] )
 
     // just to get you started, this is how to refer to the arguments that were passed
     for (int arg = 1; arg < argc; ++arg){
-        std::cout << argv[arg] << ": ";
-        
+        std::cout << "program: " << argv[0] << "\n" << argv[arg] << ": ";
+
         fs.open(argv[arg]);
         if(!fs.is_open()){ std::cout << -1 << std::endl; break; }
 
